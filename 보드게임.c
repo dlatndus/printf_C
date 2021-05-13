@@ -20,7 +20,11 @@ void main(void)
 	int dice;
 
 	srand( time(0) );
+	rand();
 	dice = rand();
+	
 	printf("%d\n", dice);
+
+
 
 }
