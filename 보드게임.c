@@ -46,6 +46,14 @@ void main(void)
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 		}
 
+		if (position == 15)
+		{
+			printf("주식이 떨어져 200만원이 차감됩니다.\n");
+			money -= 2000000;
+			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
+		}
+
+		//61을 넘으면 목적지에 도착함
 		if (position > 61)
 		{
 			printf("축하합니다. 목적기에 도달하였습니다.\n");
