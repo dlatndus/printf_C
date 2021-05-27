@@ -60,7 +60,7 @@ void main(void)
 
 		if (position == 20)
 		{
-			printf("위치 20에 있어서 재산의 20%를 기부합니다.\n");
+			printf("위치 20에 있어서 재산의 20%%를 기부합니다.\n");
 			//money = money * 0.8;
 			money *= 0.8;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
