@@ -39,7 +39,7 @@ void main(void)
 		getchar();		// 주사위를 던지기 위해서는 엔터키를 눌러야 한다.
 		//주사위 던지기 (1부터 6까지)
 		dice = rand() % 6 + 1;
-		position = position + dice;
+		position += dice;
 		printf("주사위를 던져서 %d가 나왔습니다.\n", dice);
 		printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 
@@ -57,11 +57,20 @@ void main(void)
 			money -= 2000000;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 		}
-		if (position > 61)
+
+		if (position == 20)
 		{
-			printf("61을 넘었끼 때문에 무효처리 합니다.\n");
+			printf("위치 20에 있어서 재산의 20%를 기부합니다.\n");
+			//money = money * 0.8;
+			money *= 0.8;
+			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
+		}
+
+		if (position > MAX_LENGTH)
+		{
+			printf("%d을 넘었끼 때문에 무효처리 합니다.\n", MAX_LENGTH);
 			//무효처리를 하기 위한 코드
-			position = position - dice;
+			position -= dice;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 		}
 		// 파산처리
@@ -72,7 +81,7 @@ void main(void)
 		}
 
 		// 61 위치에만 있어야 게임을 끝낸다.
-		if (position == 61)
+		if (position == MAX_LENGTH)
 		{
 			printf("축하합니다. 목적지에 도달하였습니다.\n");
 			break;
