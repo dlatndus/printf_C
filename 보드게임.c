@@ -43,36 +43,41 @@ void main(void)
 		printf("주사위를 던져서 %d가 나왔습니다.\n", dice);
 		printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 
-		// 7번에 있을때는 3번으로 이동
-		if (position == 7)
+		// test code
+		//position = 20;
+
+		switch (position)
 		{
+		case 7:
 			printf("3번 위치로 이동합니다.\n");
 			position = 3;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
-		}
-
-		if (position == 15)
-		{
+			break;
+		
+		case 15:
 			printf("주식이 떨어져 200만원이 차감됩니다.\n");
 			money -= 2000000;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
-		}
+			break;
 
-		if (position == 20)
-		{
+		case 20:
 			printf("위치 20에 있어서 재산의 20%%를 기부합니다.\n");
-			//money = money * 0.8;
+			// money = money * 0.8;
 			money *= 0.8;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
+			break;
 		}
 
+		
 		if (position > MAX_LENGTH)
 		{
-			printf("%d을 넘었끼 때문에 무효처리 합니다.\n", MAX_LENGTH);
-			//무효처리를 하기 위한 코드
+			printf("%d를 넘었기 때문에 무효처리 합니다.\n", MAX_LENGTH);
+			// 무효처리를 하기위한 코드
 			position -= dice;
 			printf("현재위치 : %d, 가진 돈 : %d\n\n", position, money);
 		}
+
+		//// 게임이 끝나는 시나리오
 		// 파산처리
 		if (money <= 0)
 		{
@@ -86,6 +91,7 @@ void main(void)
 			printf("축하합니다. 목적지에 도달하였습니다.\n");
 			break;
 		}
+		////
 	} // while문 끝
 	printf("게임이 끝났습니다.");
 }
