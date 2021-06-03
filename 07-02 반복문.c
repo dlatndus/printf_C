@@ -2,10 +2,10 @@
 
 void main(void)
 {
-	int num = 0;
-	while (num < 5)
+	
+
+	for (int num = 0; num < 5; 	num++)
 	{
 		printf("유한으로 즐겨\n");
-		num++;
 	}
 }
