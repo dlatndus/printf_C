@@ -2,28 +2,19 @@
 
 void main(void)
 {
-	int a = 3;
+	int a = 2;
 	switch (a)
 	{
 	case 1: 
-		printf("qwerty\n");
+		printf("qwerty\n"); 
+		break;
 	case 2:
 		printf("yee\n");
+		break;
 	default :
 		printf("ddd\n");
+		break;
 	}
 	
-	if (a == 1)
-	{
-		printf("qwerty");
-
-	}
-	else if (a == 2)
-	{
-		printf("yee");
-	}
-	else
-	{
-		printf("ddd");
-	}
+	
 }
