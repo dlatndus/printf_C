@@ -10,10 +10,16 @@ void main(void)
 	*/
 
 	int dan = 2;
-	for (int i = 1; i <= 9; i++)
+	int i=1;
+	while (i <= 9)
 	{
-		printf("%d X %d = %d\n",dan, i,  dan * i);
+		printf("%d X %d = %d\n", dan, i, dan * i);
+		i++;
 	}
+	//for (int i = 1; i <= 9; i++)
+	//{
+	//	printf("%d X %d = %d\n", dan, i,  dan * i);
+	//}
 
 	/*
 	printf("2 X 2 = %d\n", 2*2);
