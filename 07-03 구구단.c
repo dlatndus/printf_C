@@ -18,17 +18,40 @@ void main(void)
 		i++;
 	}
 	*/
-	int i = 1;
-	while (i<=9)
+
+	for (int i = 1; i <= 9; i++)
+	{
+		printf("%d X %d = %d\n", dan, i,  dan * i);
+	}
+	dan = 3;
+	for (int i = 1; i <= 9; i++)
 	{
 		printf("%d X %d = %d\n", dan, i, dan * i);
-		i++;
 	}
-	//for (int i = 1; i <= 9; i++)
-	//{
-	//	printf("%d X %d = %d\n", dan, i,  dan * i);
-	//}
 
+	dan = 4;
+	for (int i = 1; i <= 9; i++)
+	{
+		printf("%d X %d = %d\n", dan, i, dan * i);
+	}
+
+	dan = 5;
+	for (int i = 1; i <= 9; i++)
+	{
+		printf("%d X %d = %d\n", dan, i, dan * i);
+	}
+
+	dan = 6;
+	for (int i = 1; i <= 9; i++)
+	{
+		printf("%d X %d = %d\n", dan, i, dan * i);
+	}
+
+	dan = 7;
+	for (int i = 1; i <= 9; i++)
+	{
+		printf("%d X %d = %d\n", dan, i, dan * i);
+	}
 	/*
 	printf("2 X 2 = %d\n", 2*2);
 	printf("2 X 3 = %d\n", 2*3);
