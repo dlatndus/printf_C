@@ -18,6 +18,7 @@ void main(void)
 		i++;
 	}
 	*/
+	/*
 	int dan = 2;
 	while ( dan <= 9 )
 	{
@@ -30,6 +31,18 @@ void main(void)
 		
 		printf("\n");
 		dan++;
+	}*/
+
+	int dan = 2;
+	for (dan=2; dan <= 9; dan++)
+	{
+		int i = 1;
+		for (i=1; i <= 9; i++)
+		{
+			printf("%d X %d = %d\n", dan, i, dan * i);
+		}
+
+		printf("\n");
 	}
 	/*
 	printf("2 X 2 = %d\n", 2*2);
