@@ -36,9 +36,17 @@ void main(void)
 	int dan = 2;
 	for (dan=2; dan <= 9; dan++)
 	{
-		int i = 1;
-		for (i=1; i <= 9; i++)
+		if (dan == 4)//바깥쪽 포문
 		{
+			break; // 바깥쪽 for문을 벗어난다
+		}
+		int i = 1;
+		for (i=1; i <= 9; i++)//안쪽포문
+		{
+			if (i == 5)
+			{
+				break;//안쪽 for문을 벗어난다
+			}
 			printf("%d X %d = %d\n", dan, i, dan * i);
 		}
 
