@@ -4,7 +4,7 @@ void main(void)
 {
 	char str[20] = "Hello World";
 
-	//문자열의 개수를 무식하게 세어서 11
-	for (int i = 0; i < 11; i++)
+	//널문자가 아닐때까지 출력
+	for (int i = 0; str[i] !='\0';  i++)
 		printf("%c", str[i]);
 }
