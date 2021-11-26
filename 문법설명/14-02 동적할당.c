@@ -1,4 +1,8 @@
-﻿#include <stdio.h>
+﻿//printf 함수 사용
+#include <stdio.h>
+
+//malloc, free 함수 사용
+#include <stdlib.h>
 
 void main(void)
 {
@@ -15,4 +19,7 @@ void main(void)
 	//ptr은 지역변수 스택에 할당
 	int* ptr = malloc(sizeof(int) * count); //4바이트 * 공간 갯수
 	ptr[0] = 10; ptr[1] = 20; ptr[2] = 30; ptr[3] = 40;
+
+	//동적할당된 메모리를 해제
+	free(ptr);
 }
