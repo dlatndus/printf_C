@@ -1,14 +1,15 @@
 ﻿#include <stdio.h>
 
-struct point {
+typedef struct point {
 	int x;
 	int y;
-};
+}Point;
 
 void main(void)
 {
 	//선언과 동시에 초기화
-	struct point p1 = { 10, 20 };
+	//struct 안써도 됨
+	Point p1 = { 10, 20 };
 
 	//point p2; //struct 안쓰면 에러남
 	struct point p2;
