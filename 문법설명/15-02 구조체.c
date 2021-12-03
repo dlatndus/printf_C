@@ -18,4 +18,6 @@ void main(void)
 	printf("(%d, %d)\n", p1.x, p1.y);
 	printf("(%d, %d)\n", p2.x, p2.y);
 
+	//int 변수가 2개 들어있어서 8 바이트
+	printf("구조체의 크기는 %d", sizeof(p1));
 }
